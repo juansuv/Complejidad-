@@ -15,3 +15,5 @@ def comb_2(n,m):
 if __name__=='__main__':
     print(comb_1(3,2))
     print(comb_2(3,2))
+
+    
