@@ -16,3 +16,5 @@ for i in range(1,menor):
         mcm = (num1*num2)/mcd
 # Mostramos el resultado en pantalla
 print("El M.C.M. entre "+str(num1)+" y "+str(num2)+" es: "+str(mcm))
+
+#o(n)

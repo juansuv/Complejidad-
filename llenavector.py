@@ -1,9 +1,9 @@
 from random import randrange
 
 def llena_vector(num:int):                        #o(n)
-    vector=[None]*num                             #o(1)
+    vector=[]                          #o(1)
     for i in range(0, num):                       #o(n)
-        vector[i]=int(randrange(9999))            #o(n) o o(randrange)
+        vector.append(int(randrange(100)))            #o(n) o o(randrange)
     return vector                                 #o(1)
 
 print(llena_vector(5))
