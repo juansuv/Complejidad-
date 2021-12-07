@@ -30,17 +30,20 @@ def burbuja(lista):
 
 
 def measure_burbuja():
-    chuncks = [1000,10000,100000,500000,900000]
-    for chunk in chuncks:
+    chuncks_low=[10,15,20,25,50,100,200,500]
+    chuncks = [1000,2000,3000,10000,20000,40000,50000,90000,1000000,2000000,3000000,4000000,9000000,10000000]
+    for chunks in [chuncks_low,chuncks]:
+        for chunk in chunks:
         
-        lista=llena_vector(chunk)
-        print("lleno vector",chunk)
-        inicio = time.time()
-# -------------
-        burbuja(lista)
-        fin = time.time()
-        print(f"chunk de {chunk} se demoro en burbuja {fin-inicio}") 
-        lista[:]=[]
+            lista=llena_vector(chunk)
+            print("lleno vector",chunk)
+            inicio = time.time()
+    # -------------
+            burbuja(lista)
+            fin = time.time()
+            print(f"chunk de {chunk} se demoro en burbuja {fin-inicio}") 
+            lista[:]=[]
+            
 
 
-measure_burbuja()
+measure_burbuja() 
