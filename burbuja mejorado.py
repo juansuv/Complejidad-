@@ -31,9 +31,9 @@ def burbuja(lista):
 
 def measure_burbuja():
     chuncks_low = [10, 15, 20, 25, 50, 100, 200, 500,750,1000]
-    chuncks = [1000, 2000, 3000, 10000, 20000, 40000, 50000, 90000,100000]
-    chuncks_high = [100000, 200000, 300000,400000,500000,600000,700000,800000,900000,1000000]
-    for chunks in [chuncks_low, chuncks,chuncks_high]:
+    chuncks = [1000, 2000, 3000, 10000, 20000, 40000, 50000, 90000]
+    chuncks_high = [ 200000, 300000,400000,500000,600000,700000,800000,900000,1000000]
+    for chunks in [chuncks_low, chuncks]:
         for chunk in chunks:
         
             lista=llena_vector(chunk)
